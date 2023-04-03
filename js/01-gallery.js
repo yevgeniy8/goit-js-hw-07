@@ -4,9 +4,7 @@ import { galleryItems } from './gallery-items.js';
 console.log(galleryItems);
 
 const galleryEl = document.querySelector('.gallery');
-
 const galleryMarkup = createGalleryMarkup(galleryItems);
-
 galleryEl.innerHTML = galleryMarkup;
 
 galleryEl.addEventListener('click', onGalleryClick);
@@ -16,7 +14,6 @@ function onGalleryClick(evt) {
         return;
     }
     evt.preventDefault();
-    // console.dir(evt.target);
 
     const instance = basicLightbox.create(
         `
